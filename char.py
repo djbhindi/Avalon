@@ -8,11 +8,13 @@ class Character(object):
     names = ["Alfred", "Bob", "Charlie", "Dan", "Emily", "Frank", "George", "Hank", "Ian", "Jacob"]
     return names[:n]
 
-
   def __init__(self, allegiance, name, role=None):
     self.allegiance = allegiance
     self.name = name
     self.role = role
+
+  def nominate(self, players):
+    pass
 
   def vote(self):
     # Get user input...
